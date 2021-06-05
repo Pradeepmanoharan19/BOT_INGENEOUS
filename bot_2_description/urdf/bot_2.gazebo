@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<robot name="bot_2" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<!-- <gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo> -->
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_lid_v1_1_1_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_top_v2_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="monitor_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_Cam_1_v1_1_1_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_Cam_1_v1_1_3_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_Cam_1_v1_1_4_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_Cam_1_v1_1_2_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="RP-lidar-A1_v3_1_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_castor_2_v1_1_1_1_1">
+  <material>${body_color}</material>
+  <mu1>0.1</mu1>
+  <mu2>0.1</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="urdf_ingeneous_castor_1_v1_1_1_1_1">
+  <material>${body_color}</material>
+  <mu1>0.1</mu1>
+  <mu2>0.1</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="right_wheel_1_1">
+  <material>${body_color}</material>
+  <mu1>500.0</mu1>
+  <mu2>500.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="left_wheel_1_1">
+  <material>${body_color}</material>
+  <mu1>500.0</mu1>
+  <mu2>500.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="dispaly_screen_1_1">
+  <material>${body_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+
+  <!-- ROS Control -->
+
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control"/>
+  <robotNamespace>/bot_2</robotNamespace>
+  <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  <legacyModeNS>true</legacyModeNS>
+</gazebo>
+
+
+
+<gazebo>
+  <plugin name="turtlebot3_burger_controller" filename="libgazebo_ros_diff_drive.so">
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <odometrySource>world</odometrySource>
+    <publishOdomTF>true</publishOdomTF>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <publishWheelTF>false</publishWheelTF>
+    <publishTf>true</publishTf>
+    <publishWheelJointState>true</publishWheelJointState>
+    <legacyMode>false</legacyMode>
+    <updateRate>30</updateRate>
+    <leftJoint>Rev53</leftJoint>
+    <rightJoint>Rev52</rightJoint>
+    <wheelSeparation>0.160</wheelSeparation>
+    <wheelDiameter>0.066</wheelDiameter>
+    <wheelAcceleration>1</wheelAcceleration>
+    <wheelTorque>10</wheelTorque>
+    <rosDebugLevel>na</rosDebugLevel>
+  </plugin>
+</gazebo>
+
+
+</robot>
+
+

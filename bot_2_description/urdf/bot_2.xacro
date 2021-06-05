@@ -1,0 +1,383 @@
+<?xml version="1.0" ?>
+<robot name="bot_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find bot_2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find bot_2_description)/urdf/bot_2.trans" />
+<xacro:include filename="$(find bot_2_description)/urdf/bot_2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03952093569949327 0.011134712474763163 0.24999259249495898"/>
+    <mass value="18.472238854712504"/>
+    <inertia ixx="1.623002" ixy="0.000759" ixz="-0.069266" iyy="1.715272" iyz="-0.01153" izz="0.489429"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_lid_v1_1_1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.22331002375550324 0.0003080406017243551 0.021289397446100367"/>
+    <mass value="2.378023059370701"/>
+    <inertia ixx="0.039538" ixy="2.1e-05" ixz="-0.000128" iyy="0.037573" iyz="-2e-06" izz="0.076448"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.2488 -0.0093 -0.25"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_lid_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.2488 -0.0093 -0.25"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_lid_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_top_v2_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.12028789386411463 -0.00024597163497969143 0.054093174720763026"/>
+    <mass value="29.58608844322534"/>
+    <inertia ixx="3.383635" ixy="-0.000122" ixz="0.002578" iyy="3.381841" iyz="0.003481" izz="0.658556"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1238 -0.01 -0.7965"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_top_v2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1238 -0.01 -0.7965"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_top_v2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="monitor_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.04289267568890798 -1.4051260155412137e-16 0.2943220168777885"/>
+    <mass value="21.86109745181367"/>
+    <inertia ixx="0.138494" ixy="-0.0" ixz="0.006443" iyy="0.059915" iyz="-0.0" izz="0.107749"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1278 -0.01 -0.8"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/monitor_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1278 -0.01 -0.8"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/monitor_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_Cam_1_v1_1_1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-7.006210069934043e-07 -0.023044520755062747 0.22698371377875126"/>
+    <mass value="4.661412651485773"/>
+    <inertia ixx="0.071116" ixy="0.0" ixz="0.0" iyy="0.073841" iyz="0.000158" izz="0.004199"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005709 0.141 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005709 0.141 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_Cam_1_v1_1_3_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-7.006210070324356e-07 -0.02304452075506272 -0.21801628622125224"/>
+    <mass value="4.661412651485775"/>
+    <inertia ixx="0.071116" ixy="0.0" ixz="0.0" iyy="0.073841" iyz="0.000158" izz="0.004199"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005709 0.141 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005709 0.141 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_Cam_1_v1_1_4_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.562950976066347e-07 0.023044520759302356 0.22198371375706538"/>
+    <mass value="4.661412657768743"/>
+    <inertia ixx="0.071116" ixy="0.0" ixz="-0.0" iyy="0.073841" iyz="-0.000158" izz="0.004199"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005709 -0.161 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005709 -0.161 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_Cam_1_v1_1_2_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-7.006286795686531e-07 0.023044520759302578 -0.22698392074136708"/>
+    <mass value="4.661412657768745"/>
+    <inertia ixx="0.071116" ixy="-0.0" ixz="-0.0" iyy="0.073841" iyz="0.000158" izz="0.004199"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005709 -0.161 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005709 -0.161 -0.799575"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_Cam_1_v1_1_2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RP-lidar-A1_v3_1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0034099336096343955 -0.0018742034917625851 0.024214131267010996"/>
+    <mass value="0.5411138372935996"/>
+    <inertia ixx="0.000231" ixy="-5e-06" ixz="4.4e-05" iyy="0.000448" iyz="2e-06" izz="0.00052"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.013279 0.011658 -1.3325"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/RP-lidar-A1_v3_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.013279 0.011658 -1.3325"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/RP-lidar-A1_v3_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_castor_2_v1_1_1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.02500084400716178 -3.452099717193846e-16 -0.030458086053412367"/>
+    <mass value="0.45736562488021687"/>
+    <inertia ixx="0.000244" ixy="0.0" ixz="0.0" iyy="0.000244" iyz="0.0" izz="0.000192"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0982 -0.0095 -0.07"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_castor_2_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0982 -0.0095 -0.07"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_castor_2_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_ingeneous_castor_1_v1_1_1_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.025000751002910743 -3.174543961037557e-16 -0.030458086053412374"/>
+    <mass value="0.4573656248802163"/>
+    <inertia ixx="0.000244" ixy="-0.0" ixz="-0.0" iyy="0.000244" iyz="0.0" izz="0.000192"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1458 -0.0095 -0.07"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_castor_1_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1458 -0.0095 -0.07"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/urdf_ingeneous_castor_1_v1_1_1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.4117580839072275e-05 -0.04910432960929115 -5.388889840679534e-05"/>
+    <mass value="1.9563252284875923"/>
+    <inertia ixx="0.004739" ixy="1e-06" ixz="0.0" iyy="0.008037" iyz="4e-06" izz="0.00474"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0238 -0.2365 -0.1"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/right_wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0238 -0.2365 -0.1"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/right_wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.4151512635406788e-05 0.04910413098013053 -5.388874280765066e-05"/>
+    <mass value="1.9541398145859004"/>
+    <inertia ixx="0.004735" ixy="-1e-06" ixz="0.0" iyy="0.008031" iyz="-4e-06" izz="0.004736"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0238 0.2175 -0.1"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/left_wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0238 0.2175 -0.1"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/left_wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="dispaly_screen_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0004847687515193433 2.499736528882579e-15 0.0001241180692603816"/>
+    <mass value="0.5248195999999874"/>
+    <inertia ixx="0.005727" ixy="0.0" ixz="0.000626" iyy="0.002604" iyz="-0.0" izz="0.003444"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.209562 -0.01 -1.100248"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/dispaly_screen_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.209562 -0.01 -1.100248"/>
+    <geometry>
+      <mesh filename="package://bot_2_description/meshes/dispaly_screen_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="lid" type="fixed">
+  <origin rpy="0 0 0" xyz="0.2488 0.0093 0.25"/>
+  <parent link="base_link"/>
+  <child link="urdf_ingeneous_lid_v1_1_1_1_1"/>
+</joint>
+
+<joint name="top" type="fixed">
+  <origin rpy="0 0 0" xyz="0.1238 0.01 0.7965"/>
+  <parent link="base_link"/>
+  <child link="urdf_ingeneous_top_v2_1_1"/>
+</joint>
+
+<joint name="monitor" type="fixed">
+  <origin rpy="0 0 0" xyz="0.004 0.0 0.0035"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="monitor_1_1"/>
+</joint>
+
+<joint name="cam1" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.118091 -0.151 0.003075"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="urdf_ingeneous_Cam_1_v1_1_1_1_1"/>
+</joint>
+
+<joint name="c2" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.118091 -0.151 0.003075"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="urdf_ingeneous_Cam_1_v1_1_3_1_1"/>
+</joint>
+
+<joint name="c3" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.118091 0.151 0.003075"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="urdf_ingeneous_Cam_1_v1_1_4_1_1"/>
+</joint>
+
+<joint name="c4" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.118091 0.151 0.003075"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="urdf_ingeneous_Cam_1_v1_1_2_1_1"/>
+</joint>
+
+<joint name="lidar" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.137079 -0.021658 0.536"/>
+  <parent link="urdf_ingeneous_top_v2_1_1"/>
+  <child link="RP-lidar-A1_v3_1_1_1"/>
+</joint>
+
+<joint name="f_castor" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.0982 0.0095 0.07"/>
+  <parent link="base_link"/>
+  <child link="urdf_ingeneous_castor_2_v1_1_1_1_1"/>
+</joint>
+
+<joint name="b_castor" type="fixed">
+  <origin rpy="0 0 0" xyz="0.1458 0.0095 0.07"/>
+  <parent link="base_link"/>
+  <child link="urdf_ingeneous_castor_1_v1_1_1_1_1"/>
+</joint>
+
+<joint name="Rev52" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0238 0.2365 0.1"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="6.283185" velocity="100"/>
+</joint>
+
+<joint name="Rev53" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0238 -0.2175 0.1"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="6.283185" velocity="100"/>
+</joint>
+
+<joint name="screen" type="fixed">
+  <origin rpy="0 0 0" xyz="0.081762 0.0 0.300248"/>
+  <parent link="monitor_1_1"/>
+  <child link="dispaly_screen_1_1"/>
+</joint>
+
+</robot>

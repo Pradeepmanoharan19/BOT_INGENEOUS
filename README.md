@@ -4,3 +4,5 @@ Indigenous store inducers help to check the irregularities that occur during pro
 
 To know more 
 https://medium.com/@pradsanth/indigenous-store-inducer-zeal-an-autonomous-mobile-robot-amr-6aa011706c57
+# CAD RENDERED MODEL
+![BOT_INGENEOUS](https://user-images.githubusercontent.com/68050861/225625905-9567b352-e3e7-44ef-ae7b-08ee6ea34222.png)
